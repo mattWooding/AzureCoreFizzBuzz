@@ -1,0 +1,17 @@
+﻿@using TKMW.AzureCoreFizzBuzz.Models
+@model FizzBuzzResponseModel
+
+@{
+    ViewData["Title"] = "Fizz Buzz";
+}
+
+@Html.ActionLink("Home", "index", "home", null, null)
+
+<ol>
+    @foreach (var outputLine in Model.GameOutput)
+    {
+        <li>
+            @outputLine
+        </li>
+    }
+</ol>
